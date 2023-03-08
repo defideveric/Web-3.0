@@ -1,5 +1,3 @@
-
-
 const main = async () => {
 
   const currentTimestampInSeconds = Math.round(Date.now() / 1000);
