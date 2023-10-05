@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import {useContext} from 'react';
 import { AiFillPlayCircle } from 'react-icons/ai';
 import { SiEthereum } from 'react-icons/si';
 import { BsInfoCircle } from 'react-icons/bs';
@@ -8,6 +8,7 @@ import { shortenAddress } from '../utils/shortenAddress';
 
 const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
+//a reusable component  with props for the Input fields
 const Input = ({placeholder, name, type, value, handleChange}) => (
   <input placeholder={placeholder}
   type={type}

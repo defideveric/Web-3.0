@@ -47,7 +47,7 @@ const TransactionCard = ({addressTo, addressFrom, timestamp, message, keyword, a
 }
 
 const Transactions = () => {
-  const {currentAccount} = useContext(TransactionContext)
+  const {currentAccount} = React.useContext(TransactionContext)
   return (
     <div className='flex w-full justify-center items-center 2xl:px-20 gradient-bg-transactions'>
       <div className='flex flex-col md:p-12 py-12 px-4'>

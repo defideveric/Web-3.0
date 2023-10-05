@@ -1,15 +1,16 @@
-import React from "react";
+import { useState } from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-
 import logo from "../../images/default-monochrome-white.svg";
 
-const NavBarItem = ({ title, classprops }) => (
-  <li className={`mx-4 cursor-pointer ${classprops}`}>{title}</li>
+//component for navbar items
+const NavBarItem = ({ title, classProps }) => (
+  <li className={`mx-4 cursor-pointer ${classProps}`}>{title}</li>
 );
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = React.useState(false);
+  //a state to determine if the menu is open or not
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
     <nav className="w-full flex md:justify-center justify-between items-center p-4">
